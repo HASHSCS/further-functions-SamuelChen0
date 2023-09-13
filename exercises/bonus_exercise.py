@@ -11,6 +11,16 @@ def to_roman(num):
         "M", "CM", "D", "CD",
         "C", "XC", "L", "XL",
         "X", "IX", "V", "IV",
+        "I"
+    ]
+    rm = ''
+    i = 0
+    while num > 0:
+        for _ in range(num // val[i]):
+            rm += syms[i]
+            num -= val[i]
+        i += 1
+    return rm
 
     #pass
 
