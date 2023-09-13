@@ -2,7 +2,6 @@
 
 def longest_palindromic_substring(s):
     # Your code here
-  def longest_palindromic_substring(s):
     def expand_around_center(left, right):
         while left >= 0 and right < len(s) and s[left] == s[right]:
             left -= 1
@@ -11,7 +10,6 @@ def longest_palindromic_substring(s):
 
     longest = ""
     for i in range(len(s)):
-        # For odd-length palindromes
         palindrome1 = expand_around_center(i, i)
         if len(palindrome1)
 
