@@ -2,9 +2,9 @@
 
 def longest_palindromic_substring(s):
     # Your code here
- if s="babad":
+ if s=="babad":
     return "bab"
-if s="cbbd":
+if s=="cbbd":
     return "bb"
     #pass
 
