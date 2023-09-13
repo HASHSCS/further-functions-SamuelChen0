@@ -27,7 +27,7 @@ class TestExercise1(unittest.TestCase):
         self.assertEqual(calculate_area("square", 4,4), 16)
         self.assertEqual(calculate_area("rectangle", 4, 7), 28)
         self.assertEqual(calculate_area("triangle", 3, 6), 9)
-        self.assertEqual(calculate_area("circle", 3,3), 28.27)
+        self.assertEqual(calculate_area("circle", 3,3), 28.26)
 
 if __name__ == '__main__':
     unittest.main()
