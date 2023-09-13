@@ -2,7 +2,18 @@
 
 def are_brackets_balanced(s):
     # Your code here
-    pass
+     stack = []
+    brackets = {')': '(', '}': '{', ']': '['}
+
+    for char in s:
+        if char in brackets.values():
+            stack.append(char)
+        elif char in brackets.keys():
+            if not stack or stack.pop() != brackets[char]:
+                return False
+
+    return not stack
+    #pass
 
 # Unit tests
 import unittest
@@ -16,3 +27,4 @@ class TestExercise4(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
