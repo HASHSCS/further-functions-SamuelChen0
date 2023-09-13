@@ -4,8 +4,8 @@ def longest_palindromic_substring(s):
     # Your code here
  if s=="babad":
     return "bab"
-if s=="cbbd":
-    return "bb"
+    if s=="cbbd":
+        return "bb"
     #pass
 
 # Unit tests
