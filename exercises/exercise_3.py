@@ -2,7 +2,11 @@
 
 def gcd(a, b):
     # Your code here
-    pass
+    while b:
+        a, b = b, a % b
+    return a
+
+    #pass
 
 # Unit tests
 import unittest
